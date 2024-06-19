@@ -1,0 +1,96 @@
+﻿.m-content {
+    padding: 60px 0px;
+}
+.m-portlet {
+    -webkit-box-shadow: 0px 1px 15px 1px rgba(69,65,78,0.08);
+    box-shadow: 0px 1px 15px 1px rgba(69,65,78,0.08);
+    background-color: #fff;
+}
+.m-portlet__head h3{
+    color:#575962;
+}
+.m-portlet {
+    margin-bottom: 2.2rem;
+}
+
+.m-portlet {
+    -webkit-box-shadow: 0px 1px 15px 1px rgba(69,65,78,0.08);
+    box-shadow: 0px 1px 15px 1px rgba(69,65,78,0.08);
+    background-color: #fff;
+    max-width: 360px;
+    margin: auto;
+}
+.m-portlet .m-portlet__head {
+    border-bottom: 1px solid #ebedf2;
+}
+ .m-portlet__head {
+    display: flex;
+     align-items: stretch;
+    justify-content: center;
+      padding: 0 2.2rem;
+   
+}
+.m-form .m-form__group {
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.m-form.m-form--fit .m-form__content, .m-form.m-form--fit .m-form__heading, .m-form.m-form--fit .m-form__group {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.m-form .col-form-label, .m-form .m-form__group>label {
+    color: #3f4047;
+}
+
+.m-form label.col-form-label {
+    padding-top: .85rem;
+}
+
+.m-form .form-control-label, .m-form label {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.form-control {
+    font-family: sans-serif, Arial;
+    border-radius: 0;
+    border-radius: .25rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.95rem + 2px);
+    padding: .85rem 1.15rem;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn{
+font-size:18px !important;
+width:100%;
+}
+.forget a:hover{
+    text-decoration:none;
+}
+.m-footer {
+    padding:20px 30px;
+     background: #fff;
+    -webkit-box-shadow: -2px -8px 41px -14px rgba(202,210,222,0.61);
+    box-shadow: -2px -8px 41px -14px rgba(202,210,222,0.61);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

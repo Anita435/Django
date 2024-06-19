@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reset Password!</title>
+
+	<link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <script src="/static/jquery.min.js"></script>
+  <script src="/static/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="m-content">
+<div class="container">
+
+					<div class="col-lg-12">
+							<div class="m-portlet">
+								<div class="m-portlet__head">
+								<h3>Reset Admin Password</h3>
+								</div>
+                {% if messages %}
+                    {% for message in messages %}
+                        <p class="alert alert-warning alert-dismissible m-0">
+                            <a href="#" class="close" data-dismiss="alert"
+                               aria-label="close">&times;</a>
+                            <strong>{{ message }}</strong>
+                        </p>
+                    {% endfor %}
+                 {% endif %}
+
+								<form method="post" action="{% url 'dashboard:sent_otp' %}" class="m-form m-form--fit">
+                  {% csrf_token %}
+
+									<div class="">
+
+											<div class="form-group m-form__group row">
+												<div class="col-lg-12">
+													<label class="form-control-label"> </label>
+													<input type="text" name="mobile_number" class="form-control" required pattern="[1-9]{1}[0-9]{9}" placeholder="phone"   style="height:44px">
+													<span id="message" style="color:red"></span>
+												</div>
+											</div>
+
+											<div class="form-group m-form__group row">
+												<div class="col-lg-12">
+                                                    <div style="padding-bottom:15px">
+
+
+													<button type="submit" class="btn btn-primary custom-btn" onclick="ValidateEmail(document.myform.mail)">Submit</button>
+												</div>
+                                            </div>
+
+											</div>
+
+									</div>
+
+								</form>
+
+							</div>
+</div>
+</div>
+<footer class="m-footer ">
+
+	<div class="text-center">
+		<span class="">
+			2020 © Medico by <a href="#" class="m-link">Compnay Name</a> </span>
+
+</div>
+</footer>
+</div>
+
+</body>
+</html>

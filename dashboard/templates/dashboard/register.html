@@ -1,0 +1,137 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+<title>{% block title %}Medico | Dashboard | Users{% endblock %}</title>
+
+{%block middle%}
+<div class="row clearfix js-sweetalert">
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="card">
+      <div class="header">
+        <h2> TOTAL USERS: {{total}}</h2>
+        <ul class="header-dropdown">
+          <li class="dropdown"><a href="javascript:void(0);"><i class="zmdi zmdi-more-vert"></i></a></li>
+        </ul>
+      </div>
+      <div class="body">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Verified</th>
+              <th>Action</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for post in posts %}
+            <tr>
+              <td>{{forloop.counter0|add:posts.start_index }}</td>
+              <td>Rose</td>
+              <td><a href="javascript:avoid()" class="recent-service">{{post.phone_number}}</a></td>
+              <td>{{post.email}}</td>
+              <td><i class="material-icons">check</i></td>
+              <td>
+                <div class="demo-google-material-icon">
+                  <button type="button"
+                          class="btn btn-raised btn-default btn-circle waves-effect waves-circle waves-float"
+                          data-toggle="modal" data-target="#editModal"><i class="material-icons">create</i></button>
+                  <button type="button"
+                          class="btn btn-raised btn-default btn-circle waves-effect waves-circle waves-float"
+                          data-type="confirm"><i class="material-icons">delete</i></button>
+
+                </div>
+              </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+
+          {% if posts.paginator.num_pages > 1 %}
+
+          {% if posts.has_previous %}
+
+          <a href="?page={{ posts.previous_page_number }}">previous</a>
+
+          {% endif %}
+
+          <span>Page {{ posts.number }} of {{ posts.paginator.num_pages }}</span>
+
+          {% if posts.has_next %}
+
+          <a href="?page={{ posts.next_page_number }}">next</a>
+
+          {% endif %}
+
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form action="" method="post">
+  <div class="modal fade" id="editModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit Information</h4>
+        </div>
+        <div class="modal-body">
+          <div class="m-form__section m-form__section--first">
+            <div class="form-group m-form__group row">
+              <div class="col-lg-6">
+                <label class="form-control-label">* Full Name:</label>
+                <input type="text" class="form-control m-input" name="edit-name" placeholder="Full Name">
+              </div>
+
+              <div class="col-lg-6">
+                <label class="form-control-label">* Phone:</label>
+                <input type="number" class="form-control m-input" name="edit-phone" disabled placeholder="Phone">
+              </div>
+              <div class="col-lg-6">
+                <label class="form-control-label">* Email:</label>
+                <input type="email" class="form-control m-input" name="edit-email" disabled placeholder="Email">
+              </div>
+              <div class="col-lg-6">
+                <label class="form-control-label">* Age:</label>
+                <input type="number" class="form-control m-input" name="edit-age" placeholder="Age">
+              </div>
+              <div class="col-lg-12 m-form__group-sub">
+                <label class="form-control-label">* Gender:</label>
+                <select class="form-control m-input" name="edit-gender" style="height:inherit !important">
+                  <option>- Gender-</option>
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                  <option value="">Other</option>
+
+                </select>
+              </div>
+              <div class="col-lg-12 m-form__group-sub">
+                <label class="form-control-label">* Address:</label>
+                <textarea class="form-control m-input" name="edit-address" rows="4" cols="50" placeholder="Address"
+                          style="resize:auto !important;height: calc(6.95rem + 2px);"> </textarea>
+              </div>
+              <div class="col-lg-12">
+                <button type="submit" class="btn bg-purple waves-effect text-white">Update</button>
+                <button type="button" class="btn  bg-grey waves-effect text-white" data-dismiss="modal">CLOSE</button>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</form>
+{%endblock%}
+

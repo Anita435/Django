@@ -1,0 +1,190 @@
+.dash-list {
+    padding: 0;
+    margin: 0;
+}
+.dash-list li {
+    padding-top: 5px;
+    list-style:none;
+  font-size:11px;
+   
+}
+.label.label-danger {
+    background-color: #f44336;
+}
+.info-box-4 {
+    height: 110px !important;
+}
+.label.label-danger {
+    background-color: #f44336;
+    
+}
+.label{
+    padding: 5px 8px !important;
+}
+.recent-service:hover{
+    text-decoration:none;
+}
+.stats-card{
+    float:right;
+}
+.modal-btn{
+    background:none !important;
+     color:#555555 !important;
+     margin: 0!important;
+     padding:0px !important;
+     box-shadow: none !important;
+     text-transform: capitalize !important;
+     font-size:15px !important;
+}
+.modal-btn:hover{
+    background:none !important; 
+}
+
+.m-content {
+    padding: 30px 30px;
+}
+
+.modal-header{
+    text-align:Center;
+}
+
+ .m-portlet__head {
+    border-bottom: 1px solid #ebedf2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    padding: 0 2.2rem;
+    height: 5.1rem;
+    position: relative;
+}
+
+ 
+ .m-portlet__head .m-portlet__head-tools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+}
+
+ .m-form.m-form--fit>.m-portlet__body {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.m-form.m-form--fit .m-form__group {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.m-form .m-form__group {
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.m--hide {
+    display: none !important;
+}
+.m--margin-top-10 {
+    margin-top: 10px !important;
+}
+
+.alert.m-alert--default {
+    background: #f7f8fa;
+    color: #575962;
+}
+
+.m-form .m-form__group {
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.m-form .m-form__section:last-child{
+	
+	    margin-bottom: 0;
+}
+
+.m-form.m-form--fit .m-form__content, .m-form.m-form--fit .m-form__heading, .m-form.m-form--fit  {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.m-form .col-form-label, .m-form .m-form__group>label {
+    color: #3f4047;
+}
+
+.m-form label.col-form-label {
+    padding-top: .85rem;
+}
+
+.m-form .form-control-label, .m-form label {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.form-control {
+    font-family: sans-serif, Arial;
+    border-radius: 0;
+    border-radius: .25rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.95rem + 2px);
+    padding: .85rem 1.15rem !important;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da !important;
+    border-radius: .25rem;
+    -webkit-transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+}
+.modal-header{
+    justify-content: center !important;
+}
+.label-danger, .label-info {
+    cursor:pointer;
+}
+.sidebar .menu .list a {
+    font-size:14px !important
+}
+.sidebar .menu .list a span {
+    margin: 0;
+    font-weight: 400;
+    overflow: hidden;
+    padding-left: 12px !important;
+}
+
+    @media (min-width: 768px){
+.col-md-3 {
+    -webkit-box-flex: 0 !important;
+    -webkit-flex: 0 0 25% !important;
+    -ms-flex: 0 0 25% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+}
+}
